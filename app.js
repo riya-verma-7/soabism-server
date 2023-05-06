@@ -24,7 +24,7 @@ app.use(cors({
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://admin-saurav:Codes007@cluster0.3rfcl.mongodb.net/soabism', {
+mongoose.connect(process.env.DBURL, {
     useUnifiedTopology: true,
     useNewUrlParser: true
 }).then(() => console.log("DB connected"))
