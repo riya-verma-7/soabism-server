@@ -16,8 +16,8 @@ app.use(express.static("public"));
 
 
 app.use(cors({
-    origin: "http://codes-soabism.netlify.app/"
-}))
+    origin: ["http://localhost:3000", "https://codes-soabism.onrender.com/"]
+}));
 
 
 
